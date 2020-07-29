@@ -6,8 +6,8 @@ jobs:
     environment:
       MANIFEST_BRANCH: 'android-9.0'
       VERSION: '3.0.0'
-      MAINTAINER: '@shashank'
-      VENDOR: 'Xiaomi'
+      MAINTAINER: '@shashank1436'
+      VENDOR: 'xiaomi'
       CODENAME: 'mido'
       FLAVOR: 'eng'
       PB_OFFICIAL: 'true'

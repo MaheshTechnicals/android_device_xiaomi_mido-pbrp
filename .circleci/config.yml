@@ -4,23 +4,18 @@ jobs:
     docker:
       - image: fr3akyphantom/droid-builder:latest
     environment:
-      MANIFEST_BRANCH: 'android-9.0'
-      VERSION: '3.0.0'
-      MAINTAINER: '@shashank1436'
+      MANIFEST_BRANCH: 'android-8.1'
+      VERSION: '2.9.1'
+      MAINTAINER: '@sMaheshtechnicals0'
       VENDOR: 'xiaomi'
-      CODENAME: 'mido'
+      CODENAME: 'oxygen'
       FLAVOR: 'eng'
       PB_OFFICIAL: 'true'
       CHANGELOG: |
-        - added support for FBE
-        - Updated prebuild kernel from FoxKernel
-        - Bringup 3.0 
-        - Source side changes 
-        - Fully Redesigned UI 
-        - New Android like Power Menu (Activated via power key hold) 
-        - Flashlight toggled by Vol up(+) on hold 
-        - Flashlight toggle on Lockscreen 
-        - Etc.
+        - 
+
+Untick DM VERITY by default
+        
     working_directory: /home/builder/pitchblack
     steps:
       - run:
@@ -35,5 +30,5 @@ workflows:
       - build:
           filters:
             branches:
-              only: 'android-9.0'
+              only: 'android-8.1'
           context: org-global
